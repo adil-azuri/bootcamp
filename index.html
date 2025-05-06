@@ -22,7 +22,7 @@
         <div class="container-fluid">
             <div class="d-flex conten-nav">
                 <a class="navbar-brand" href="#">
-                    <img src="/img/logo_dumways.png" alt="logo">
+                    <img src="/assets/img/logo_dumways.png" alt="logo">
                 </a>
                 <a class="navbar-brand" href="#">Home</a>
                 <a class="navbar-brand" href="#">My Project</a>
@@ -36,28 +36,30 @@
         <h1 class="text-center">GET IN TOUCH</h1>
         <form class="form">
             <label class="form-label ">Name</label>
-            <input type="name" class="form-control">
+            <input type="name" class="form-control" id="name">
 
             <label class="form-label">Email</label>
-            <input type="email" class=" form-control">
+            <input type="email" class=" form-control" id="email">
 
             <label class="form-label">Phone Number</label>
-            <input type="phone" class="form-control">
+            <input type="phone" class="form-control" id="phone">
 
-            <label for="disabledSelect" class="form-label">Subject</label>
-            <select class="form-select form-control">
-                <option>Subject 1</option>
-                <option>Subject 2</option>
-                <option>Subject 3</option>
+            <label for="disabledSelect" class="form-label">Pilihan</label>
+            <select class="form-select form-control" id="selectoption">
+                <option>Nasi Goreng</option>
+                <option>Nasi Padang</option>
+                <option>Ga makan</option>
             </select>
 
-            <label class="form-label">Your Message</label>
-            <textarea class="form-control"></textarea>
+            <label class="form-label">Comment</label>
+            <textarea class="form-control" id="areatext"></textarea>
 
-            <button type="submit" class="btn btn-primary bg-black border-black float-end">Submit</button>
+            <button onclick="getData(event)" type="submit"
+                class="btn btn-primary bg-black border-black float-end">Submit</button>
         </form>
     </div>
 
+    <script src="assets/scripts/index.js"></script>
 </body>
 
 </html>
