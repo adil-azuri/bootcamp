@@ -3,24 +3,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
-    font-weight: bold;
-    margin-top: 10px;
-    padding: 10px 5%;
-}
-
-.navbar-brand img {
-    width: 3em;
-}
-
-.conten-nav {
-    gap: 50px;
-}
-
-.container {
-    width: 40%;
-}
-
 .form-control {
     font-size: 30px;
     padding: 2%;
@@ -31,18 +13,27 @@ body {
 h1 {
     font-size: 50px;
     font-weight: bold;
-    margin: 10%;
+    margin: 5% 0;
+    width: 100%;
 
 }
 
 .form-label {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
-
 }
 
 .form textarea {
-    height: 200px;
+    height: 10em;
+}
+
+.checkbox {
+    margin-left: 200px;
+}
+
+.form-check {
+    font-size: 30px;
+
 }
 
 
@@ -54,7 +45,34 @@ button[type="submit"] {
     font-weight: bold;
 }
 
+.button-op {
+    justify-content: center;
+    background-color: aliceblue;
+    width: 100%;
+}
+
 .btn:hover {
     background-color: lightskyblue !important;
     color: black !important;
+}
+
+
+#content {
+    display: flex;
+    width: 100%;
+    background-color: lightcyan;
+    justify-content: start;
+    flex-direction: row;
+}
+
+.card {
+    padding: 15px;
+    width: 30%;
+    height: 300PX;
+    margin: 0 10px;
+    justify-content: space-between;
+}
+
+.icon-checkbox {
+    width: 2em;
 }

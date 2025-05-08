@@ -17,48 +17,87 @@
 </head>
 
 <body>
-
-    <nav class="navbar bg-white">
-        <div class="container-fluid">
-            <div class="d-flex conten-nav">
-                <a class="navbar-brand" href="#">
-                    <img src="/assets/img/logo_dumways.png" alt="logo">
-                </a>
-                <a class="navbar-brand" href="#">Home</a>
-                <a class="navbar-brand" href="#">My Project</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand ms-5">
+                <img src="assets/img/logo_dumways.png" class="icon" style="width: 3em;">
+            </a>
+            <button class="navbar-toggler" type="button"></button>
+            <div class=" navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item fs-5 fw-bold">
+                        <a class="nav-link active fs-5 fw-bold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item fs-5 fw-bold">
+                        <a class="nav-link" href="#">My Project</a>
+                    </li>
+                </ul>
+                <div class="d-flex me-5" role="search">
+                    <button type="button" class="btn btn-dark fw-bold">Contact Me</button>
+                </div>
             </div>
-            <button class="btn btn-primary bg-black border-black">Contact Me</button>
         </div>
     </nav>
 
-
     <div class="container">
-        <h1 class="text-center">GET IN TOUCH</h1>
+        <h1 class="text-center">ADD MY PROJECT</h1>
         <form class="form">
-            <label class="form-label ">Name</label>
-            <input type="name" class="form-control" id="name">
+            <label for="projectName" class="form-label">Project Name</label>
+            <input type="text" class="form-control" id="projectName">
 
-            <label class="form-label">Email</label>
-            <input type="email" class=" form-control" id="email">
+            <div class="d-flex justify-content-between gap-3">
+                <div class="w-50">
+                    <label for="startDate" class="form-label">Start Date</label>
+                    <input type="date" class="form-control" id="startDate">
+                </div>
+                <div class="w-50">
+                    <label for="endtDate" class="form-label">End Date</label>
+                    <input type="date" class="form-control" id="endDate">
+                </div>
+            </div>
 
-            <label class="form-label">Phone Number</label>
-            <input type="phone" class="form-control" id="phone">
+            <label for="areaText" class="form-label">Description</label>
+            <textarea class="form-control" id="areaText"></textarea>
 
-            <label for="disabledSelect" class="form-label">Pilihan</label>
-            <select class="form-select form-control" id="selectoption">
-                <option>Nasi Goreng</option>
-                <option>Nasi Padang</option>
-                <option>Ga makan</option>
-            </select>
+            <label class="form-label">Technologies</label>
+            <div class="d-flex gap-5 ">
+                <div class="mt-2 me-4">
+                    <div class="form-check ">
+                        <input class="form-check-input" type="checkbox" id="nodejs">
+                        <label for="nodejs" class="form-label">Node JS</label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input" type="checkbox" id="reactjs">
+                        <label for="reactjs" class="form-label">React JS</label>
+                    </div>
+                </div>
 
-            <label class="form-label">Comment</label>
-            <textarea class="form-control" id="areatext"></textarea>
+                <div class="mt-2">
+                    <div class="form-check checkbox">
+                        <input class="form-check-input" type="checkbox" id="nextjs">
+                        <label for="nextjs" class="form-label">Next JS</label>
+                    </div>
+                    <div class="form-check checkbox">
+                        <input class="form-check-input" type="checkbox" id="typescript">
+                        <label for="typescript" class="form-label">TypeScript</label>
+                    </div>
+                </div>
+            </div>
+
+            <label for="file" class="form-label">Upload A File</label>
+            <input type="file" class="form-control" id="picture">
 
             <button onclick="getData(event)" type="submit"
                 class="btn btn-primary bg-black border-black float-end">Submit</button>
         </form>
-    </div>
 
+
+        <div id="content">
+            <h1 class="text-center">MY PROJECT</h1>
+
+        </div>
+
+    </div>
     <script src="assets/scripts/index.js"></script>
 </body>
 
